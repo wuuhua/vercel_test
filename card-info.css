@@ -1,0 +1,60 @@
+*, :after, :before {
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+}
+.arrow {
+    display: block;
+}
+.md-arrow {
+    display: none;
+}
+.page {
+    perspective: 1000px;
+}
+.card {
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+.glossy{
+  transition: 0.3s;
+}
+.btn {
+    border-radius: 9999px;
+    display: grid;
+    padding: .25rem;
+    place-content: center;
+    position: relative;
+}
+.scrollbar {
+    &::-webkit-scrollbar {
+        height: 0;
+        width: 0;
+    }
+}
+[class*="mark-"] {
+    border-radius: 9999px;
+}
+.mark-1 {
+    background-color: hsla(0, 96%, 89%, .8)
+}
+.mark-2 {
+    background-color: hsla(32, 98%, 83%, .8);
+}
+.mark-3 {
+    background-color: hsla(53, 98%, 77%, .8);
+}
+.mark-4 {
+    background-color: rgba(187, 247, 208, .8);
+}
+.mark-6 {
+    background-color: rgba(233, 213, 255, .8);
+}
+
+@media screen and (width < 1200px) {
+    .arrow {
+        display: none;
+    }
+    .md-arrow {
+        display: block;
+    }
+}
